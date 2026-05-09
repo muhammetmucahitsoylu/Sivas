@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sivas Tanıtım Sitesi</title>
   <style>
+
+    /* genel ayarlar */
     body {
       font-family: Arial, sans-serif;
       margin: 0;
@@ -14,10 +16,10 @@
     }
 
     header {
-      background-color: #8B0000;
-      color: white;
-      text-align: center;
-      padding: 30px;
+        background-color: #8B0000;
+        color: white;
+        text-align: center;
+        padding: 30px;
     }
 
     header h1 {
@@ -30,6 +32,7 @@
       font-size: 16px;
     }
 
+    /* navigasyon menusu */
     nav {
       background-color: #600000;
       display: flex;
@@ -40,12 +43,12 @@
     }
 
     nav a {
-      color: white;
-      text-decoration: none;
-      padding: 8px 16px;
-      background-color: #8B0000;
-      border-radius: 4px;
-      font-size: 14px;
+        color: white;
+        text-decoration: none;
+        padding: 8px 16px;
+        background-color: #8B0000;
+        border-radius: 4px;
+        font-size: 14px;
     }
 
     nav a:hover {
@@ -69,9 +72,10 @@
     }
 
     .section p {
-      line-height: 1.7;
+        line-height: 1.7;
     }
 
+    /* kartlar icin grid */
     .kart-grid {
       display: flex;
       flex-wrap: wrap;
@@ -89,9 +93,9 @@
     }
 
     .kart h3 {
-      margin: 0 0 8px;
-      color: #8B0000;
-      font-size: 16px;
+        margin: 0 0 8px;
+        color: #8B0000;
+        font-size: 16px;
     }
 
     .kart p {
@@ -101,6 +105,7 @@
       line-height: 1.5;
     }
 
+    /* ilce etiketleri */
     .ilce-liste {
       display: flex;
       flex-wrap: wrap;
@@ -117,10 +122,10 @@
     }
 
     .etiket-liste {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 15px;
     }
 
     .etiket {
@@ -140,10 +145,10 @@
     }
 
     table th {
-      background-color: #8B0000;
-      color: white;
-      padding: 10px;
-      text-align: left;
+        background-color: #8B0000;
+        color: white;
+        padding: 10px;
+        text-align: left;
     }
 
     table td {
@@ -151,6 +156,7 @@
       border-bottom: 1px solid #ddd;
     }
 
+    /* satirlar icin renk */
     table tr:nth-child(even) {
       background-color: #f2f2f2;
     }
@@ -164,18 +170,22 @@
       font-size: 14px;
     }
 
+    /* telefon icin */
     @media (max-width: 600px) {
-      .kart { width: 100%; }
+      .kart {
+        width: 100%;
+      }
     }
+
   </style>
 </head>
 <body>
 
 <header>
   <h1>SİVAS</h1>
-  <p>Tarihi, kültürü ve doğasıyla Anadolu'nun önemli şehirlerinden biri</p>
 </header>
 
+<!-- navigasyon -->
 <nav>
   <a href="#hakkinda">Hakkında</a>
   <a href="#tarih">Tarih</a>
@@ -186,98 +196,138 @@
   <a href="#alisveris">Ne Alınır?</a>
 </nav>
 
-<!-- HAKKINDA -->
+<!-- genel bilgiler bolumu -->
 <div class="section" id="hakkinda">
   <h2>Sivas Hakkında</h2>
   <p>
     Sivas, İç Anadolu Bölgesi'nde yer alan ve Türkiye'nin yüzölçümü bakımından en büyük ikinci ilidir.
     Kangal köpeği, Divriği Ulu Camii ve Balıklı Kaplıca ile tanınan Sivas, tarihi açıdan da oldukça önemli bir şehirdir.
   </p>
+
   <table>
-    <tr><th>Bilgi</th><th>Değer</th></tr>
-    <tr><td>Yüzölçümü</td><td>28.164 km²</td></tr>
-    <tr><td>Nüfus</td><td>631.401 (TÜİK)</td></tr>
-    <tr><td>İlçe Sayısı</td><td>17</td></tr>
-    <tr><td>Rakım</td><td>1.285 m</td></tr>
-    <tr><td>Bölge</td><td>İç Anadolu</td></tr>
-    <tr><td>Üniversiteler</td><td>Sivas Cumhuriyet Üniversitesi, Sivas Bilim ve Teknoloji Üniversitesi</td></tr>
+    <tr>
+      <th>Bilgi</th>
+      <th>Değer</th>
+    </tr>
+    <tr>
+      <td>Yüzölçümü</td>
+      <td>28.164 km²</td>
+    </tr>
+    <tr>
+      <td>Nüfus</td>
+      <td>631.401 (TÜİK)</td>
+    </tr>
+    <tr>
+      <td>İlçe Sayısı</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td>Rakım</td>
+      <td>1.285 m</td>
+    </tr>
+    <tr>
+      <td>Bölge</td>
+      <td>İç Anadolu</td>
+    </tr>
+    <tr>
+      <td>Üniversiteler</td>
+      <td>Sivas Cumhuriyet Üniversitesi, Sivas Bilim ve Teknoloji Üniversitesi</td>
+    </tr>
   </table>
 </div>
 
-<!-- TARİH -->
+<!-- tarih bolumu -->
 <div class="section" id="tarih">
   <h2>Tarihçe</h2>
   <p>
-    Sivas, çok eski bir yerleşim yeridir. Hititlerden Romalılara, Selçuklulardan Osmanlılara kadar birçok devlet bu topraklarda hüküm sürmüştür.
+    Sivas, çok eski bir yerleşim yeridir. Hititlerden Romalılara, Selçuklulardan Osmanlılara kadar
+    birçok devlet bu topraklarda hüküm sürmüştür.
     Türkiye'de Konya'dan sonra en fazla Selçuklu eserine sahip olan ildir.
     Kurtuluş Savaşı döneminde ise 1919'da Atatürk'ün başkanlığında toplanan Sivas Kongresi ile tarihe geçmiştir.
   </p>
+
   <div class="kart-grid">
+
     <div class="kart">
       <h3>Hitit Dönemi (MÖ 2000)</h3>
       <p>Hititler bu bölgeye "Sipilena" adını vermiştir. Önemli bir ticaret ve yerleşim merkeziydi.</p>
     </div>
+
     <div class="kart">
       <h3>Roma Dönemi (MÖ 64)</h3>
       <p>Romalılar döneminde şehrin adı "Sebasteia" olmuştur. Önemli bir garnizon şehri olarak kullanılmıştır.</p>
     </div>
+
     <div class="kart">
       <h3>Selçuklu Dönemi (13. yy)</h3>
       <p>Bu dönemde şehir büyük bir gelişme göstermiştir. Divriği Ulu Camii, Gök Medrese ve Buruciye Medresesi bu döneme aittir.</p>
     </div>
+
     <div class="kart">
       <h3>Sivas Kongresi (1919)</h3>
       <p>4 Eylül 1919'da Atatürk başkanlığında toplanan kongre, Kurtuluş Savaşı'nın en önemli kararlarının alındığı toplantıdır.</p>
     </div>
+
   </div>
 </div>
 
-<!-- YÖRESEL YEMEKLER -->
+<!-- yemekler -->
 <div class="section" id="yemekler">
   <h2>Yöresel Yemekler</h2>
   <p>
     Sivas mutfağı et, buğday ve yoğurt ağırlıklıdır. Yemekler genellikle sade malzemelerle yapılır ama lezzeti yerinde olan yemeklerdir.
   </p>
+
   <div class="kart-grid">
+
     <div class="kart">
       <h3>Sivas Köftesi</h3>
       <p>Sadece kıyma ve tuzla yapılır, başka hiçbir şey katılmaz. Döküm tavada pişirilir, pide üzerinde ızgara domates ve biberle servis edilir. Coğrafi işaret tescili vardır.</p>
     </div>
+
     <div class="kart">
       <h3>Sivas Kebabı</h3>
       <p>Kuzu eti, patlıcan, biber ve domates ile yapılan bir kebap çeşididir.</p>
     </div>
+
     <div class="kart">
       <h3>Madımak Aşı</h3>
       <p>Madımak, Sivas yaylalarında yetişen bir bitkidir. Bu bitkiyle yapılan geleneksel bir yemektir, yoğurtla servis edilir.</p>
     </div>
+
     <div class="kart">
       <h3>Divriği Pilavı</h3>
       <p>Pirinç, nohut, kuzu eti ve kuru üzümle yapılan bir pilav çeşididir. Düğün ve bayramlarda yapılır. Coğrafi işaret tescili vardır.</p>
     </div>
+
     <div class="kart">
       <h3>Hingel</h3>
       <p>Sivas'a özgü bir hamur yemeğidir. Kıymalı ya da patatesli olarak yapılır, yoğurt ve domates sosuyla yenir.</p>
     </div>
+
     <div class="kart">
       <h3>Peskütan Çorbası</h3>
       <p>Peskütan yoğurdu ve yarma ile yapılan geleneksel bir çorbadır. Üzerine nane sosu dökülür.</p>
     </div>
+
     <div class="kart">
       <h3>Sivas Katmeri</h3>
       <p>Katmerli bir hamur işidir. Kahvaltıda veya çay yanında yenir.</p>
     </div>
+
     <div class="kart">
       <h3>Kesme Aşı</h3>
       <p>El yapımı erişte ile yapılan yeşil mercimekli bir yemektir. Yöresel eriştesi ile farklı bir lezzet kazanır.</p>
     </div>
+
   </div>
 </div>
 
-<!-- İLÇELER -->
+<!-- ilceler -->
 <div class="section" id="ilceler">
   <h2>İlçeler</h2>
   <p>Sivas'a bağlı 17 ilçe vardır. En kalabalık ilçe Merkez, en küçük ilçe ise Doğanşar'dır.</p>
+
   <div class="ilce-liste">
     <span class="ilce-item">Merkez</span>
     <span class="ilce-item">Divriği</span>
@@ -299,70 +349,86 @@
   </div>
 </div>
 
-<!-- GEZİLECEK YERLER -->
+<!-- gezilecek yerler -->
 <div class="section" id="gezilecek">
   <h2>Gezilecek Yerler</h2>
   <p>Sivas'ta hem tarihi hem de doğal güzellikler açısından görülmeye değer pek çok yer vardır.</p>
+
   <div class="kart-grid">
+
     <div class="kart">
       <h3>Divriği Ulu Camii ve Darüşşifası</h3>
       <p>1228 yılında yapılmıştır. UNESCO Dünya Mirası Listesi'nde yer almaktadır. Taş işçiliği bakımından dünyanın sayılı eserlerinden biridir.</p>
     </div>
+
     <div class="kart">
       <h3>Çifte Minareli Medrese</h3>
       <p>Selçuklu dönemine ait, 13. yüzyılda yapılmış bir medresedir. Çini süslemeleriyle öne çıkar.</p>
     </div>
+
     <div class="kart">
       <h3>Buruciye Medresesi</h3>
       <p>Yine Selçuklu dönemine ait bir yapıdır. Şu an müze olarak kullanılmaktadır.</p>
     </div>
+
     <div class="kart">
       <h3>Balıklı Kaplıca (Sıcak Çermik)</h3>
       <p>Garra Rufa adlı balıklarla yapılan tedavisiyle dünyaca tanınmıştır. Özellikle sedef hastalığına iyi geldiği bilinmektedir.</p>
     </div>
+
     <div class="kart">
       <h3>Gökpınar Gölü</h3>
       <p>Gürün ilçesine yakın, suyu çok berrak olan bir göldür. Alabalığıyla meşhurdur.</p>
     </div>
+
     <div class="kart">
       <h3>Sızır Şelalesi</h3>
       <p>Gemerek ilçesinde bulunan bir şelaledir. Çevre doğasıyla birlikte güzel bir piknik ve gezi alanıdır.</p>
     </div>
+
   </div>
 </div>
 
-<!-- KÜLTÜR -->
+<!-- kultur ve el sanatlari -->
 <div class="section" id="kultur">
   <h2>Kültür ve El Sanatları</h2>
   <p>Sivas, el sanatları ve halk kültürü açısından zengin bir şehirdir.</p>
+
   <div class="kart-grid">
+
     <div class="kart">
       <h3>Kangal Köpeği</h3>
       <p>Kangal ilçesinden adını alan bu köpek ırkı dünyaca tanınmaktadır. Büyük ve güçlü yapısıyla sürü koruma köpeği olarak kullanılır.</p>
     </div>
+
     <div class="kart">
       <h3>Gümüş İşlemeciliği (Kalemkarlık)</h3>
       <p>Gümüş üzerine yapılan ince işlemeciliktir. Sivas'ın geleneksel el sanatları arasında önemli bir yeri vardır.</p>
     </div>
+
     <div class="kart">
       <h3>Bıçakçılık</h3>
       <p>Sivas bıçağı yöreye özgü bir üründür. Hediyelik olarak da çok tercih edilir.</p>
     </div>
+
     <div class="kart">
       <h3>Sivas Kilimi</h3>
       <p>Kendine özgü geometrik desenleri olan Sivas kilimleri yurt içinde ve dışında tanınmaktadır.</p>
     </div>
+
     <div class="kart">
       <h3>Aşıklık Geleneği</h3>
       <p>Şarkışlalı Aşık Veysel Türk halk müziğinin en önemli isimlerinden biridir. Sivas bu gelenek açısından Türkiye'nin önde gelen illeri arasındadır.</p>
     </div>
+
   </div>
 </div>
 
-<!-- NE ALINIR -->
+<!-- ne alinir -->
 <div class="section" id="alisveris">
   <h2>Sivas'tan Ne Alınır?</h2>
   <p>Sivas'a gittiğinizde yanınıza alabileceğiniz bazı yöresel ürünler:</p>
+
   <div class="etiket-liste">
     <span class="etiket">Sivas Köftesi</span>
     <span class="etiket">Sivas Katmeri</span>
